@@ -1,5 +1,104 @@
-template-repository (1.0-1) unstable; urgency=medium
+libsys-cpuaffinity-perl (1.13~03-2) unstable; urgency=medium
 
-  * Initial release
+  [ Debian Janitor ]
+  * Apply multi-arch hints. + libsys-cpuaffinity-perl: Drop Multi-Arch: same.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Sat, 15 Oct 2022 19:54:48 +0100
+
+libsys-cpuaffinity-perl (1.13~03-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream release candidate 1.13_03.
+    Next attempt to fix #976933.
+  * Update years of upstream copyright.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 25 Dec 2020 14:09:39 +0100
+
+libsys-cpuaffinity-perl (1.13~01-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ gregor herrmann ]
+  * debian/control: update Build-Depends for cross builds.
+  * debian/watch: use uscan version 4.
+  * Update 'DEB_BUILD_MAINT_OPTIONS = hardening=+bindnow' to '=+all'.
+
+  [ Debian Janitor ]
+  * Bump debhelper from deprecated 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata (already
+    present in machine-readable debian/copyright).
+  * Apply multi-arch hints.
+
+  [ gregor herrmann ]
+  * Import upstream release candidate 1.13_01.
+    Give xs_sched_getaffinity/setaffinity methods higher priority
+    than taskset methods (debian #976933).
+  * Declare compliance with Debian Policy 4.5.1.
+  * Set Rules-Requires-Root: no.
+  * Drop unneeded version constraints from (build) dependencies.
+  * Bump debhelper-compat to 13.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 19 Dec 2020 17:24:01 +0100
+
+libsys-cpuaffinity-perl (1.12-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Update years of upstream copyright.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 13 Jan 2017 23:38:29 +0100
+
+libsys-cpuaffinity-perl (1.12~01-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream release candidate 1.12_01.
+    Adds more checks in order to investigate RT#118730/Debian #844141.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 05 Dec 2016 19:12:01 +0100
+
+libsys-cpuaffinity-perl (1.11-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+
+ -- gregor herrmann <gregoa@debian.org>  Tue, 29 Nov 2016 00:18:07 +0100
+
+libsys-cpuaffinity-perl (1.11~02-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream release candidate 1.11_02.
+    Fixes "FTBFS: Failed test 'bind to all processors successful
+    18446744073709551615 == 18446744073709551616-1'"
+    (Closes: #844141)
+
+ -- gregor herrmann <gregoa@debian.org>  Tue, 22 Nov 2016 19:19:54 +0100
+
+libsys-cpuaffinity-perl (1.10-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 1.10
+
+ -- Lucas Kanashiro <kanashiro@debian.org>  Mon, 12 Sep 2016 16:34:25 -0300
+
+libsys-cpuaffinity-perl (1.09-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Update years of upstream copyright.
+  * Bump required version of Module::Build in build-deps.
+  * Make short description a noun phrase.
+  * Use HTTPS for CPAN URL in debian/upstream/metadata.
+  * Use HTTPS for Format URL in debian/copyright.
+  * Set bindnow linker flag in debian/rules.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 06 Aug 2016 16:40:32 +0200
+
+libsys-cpuaffinity-perl (1.06-1) unstable; urgency=low
+
+  * Initial Release. (Closes: #832089)
+
+ -- Michael Prokop <mika@debian.org>  Fri, 22 Jul 2016 09:37:44 +0200
